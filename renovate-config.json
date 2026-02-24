@@ -6,20 +6,5 @@
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "minimumReleaseAge": "1 day",
-  "platformAutomerge": true,
-  "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
-  "packageRules": [
-    {
-      "description": "Automerge Chainguard digest updates after approval",
-      "matchDatasources": ["docker"],
-      "matchPackagePatterns": ["cgr\\.dev/basistheory\\.com/.*"],
-      "matchUpdateTypes": ["digest"],
-      "automerge": true
-    },
-    {
-      "description": "Automerge minor/patch after approval",
-      "matchUpdateTypes": ["patch", "minor"],
-      "automerge": true
-    }
-  ]
+  "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"]
 }
