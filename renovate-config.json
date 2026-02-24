@@ -7,7 +7,7 @@
   ],
   "minimumReleaseAge": "1 day",
   "platformAutomerge": true,
-  "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions"],
+  "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "packageRules": [
     {
       "description": "Automerge Chainguard digest updates after approval",
