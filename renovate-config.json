@@ -1,0 +1,25 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Basis Theory org-wide Renovate config preset",
+  "extends": [
+    "config:best-practices",
+    "helpers:pinGitHubActionDigestsToSemver"
+  ],
+  "minimumReleaseAge": "1 day",
+  "platformAutomerge": true,
+  "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions"],
+  "packageRules": [
+    {
+      "description": "Automerge Chainguard digest updates after approval",
+      "matchDatasources": ["docker"],
+      "matchPackagePatterns": ["cgr\\.dev/basistheory\\.com/.*"],
+      "matchUpdateTypes": ["digest"],
+      "automerge": true
+    },
+    {
+      "description": "Automerge minor/patch after approval",
+      "matchUpdateTypes": ["patch", "minor"],
+      "automerge": true
+    }
+  ]
+}
