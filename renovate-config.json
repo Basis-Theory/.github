@@ -1,0 +1,10 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Basis Theory org-wide Renovate config preset",
+  "extends": [
+    "config:best-practices",
+    "helpers:pinGitHubActionDigestsToSemver"
+  ],
+  "minimumReleaseAge": "1 day",
+  "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"]
+}
