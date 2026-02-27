@@ -5,6 +5,7 @@
     "config:best-practices",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
+  "automerge": false,
   "minimumReleaseAge": "1 day",
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "packageRules": [
