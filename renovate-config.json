@@ -6,6 +6,8 @@
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "automerge": false,
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 5,
   "minimumReleaseAge": "1 day",
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "packageRules": [
