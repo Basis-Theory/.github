@@ -10,6 +10,9 @@
   "prConcurrentLimit": 5,
   "minimumReleaseAge": "1 day",
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
+  "lockFileMaintenance": {
+    "enabled": false
+  },
   "packageRules": [
     {
       "description": "Group all non-major updates into a single PR",
