@@ -11,7 +11,8 @@
   "minimumReleaseAge": "1 day",
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "lockFileMaintenance": {
-    "enabled": false
+    "enabled": true,
+    "schedule": ["before 6am on the first day of the month"]
   },
   "packageRules": [
     {
