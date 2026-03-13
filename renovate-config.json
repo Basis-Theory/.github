@@ -6,6 +6,7 @@
     "helpers:pinGitHubActionDigestsToSemver"
   ],
   "automerge": false,
+  "rebaseWhen": "behind-base-branch",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 5,
   "minimumReleaseAge": "1 day",
