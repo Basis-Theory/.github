@@ -21,6 +21,11 @@
       "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
+    },
+    {
+      "description": "Require Dependency Dashboard approval before opening major update PRs",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
     }
   ]
 }
