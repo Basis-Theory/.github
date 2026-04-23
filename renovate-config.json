@@ -5,7 +5,7 @@
     "config:best-practices",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
-  "timezone": "America/New_York",
+  "timezone": "UTC",
   "schedule": ["before 6am on monday"],
   "automerge": false,
   "prHourlyLimit": 0,
@@ -20,7 +20,7 @@
     "schedule": ["before 6am on the first day of the month"]
   },
   "vulnerabilityAlerts": {
-    "minimumReleaseAge": "1 day",
+    "minimumReleaseAge": "6 hours",
     "schedule": [],
     "labels": ["dependencies", "security"]
   },
