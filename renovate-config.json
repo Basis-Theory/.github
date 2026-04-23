@@ -11,6 +11,7 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 5,
   "minimumReleaseAge": "7 days",
+  "rebaseWhen": "behind-base-branch",
   "configMigration": true,
   "labels": ["dependencies"],
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
@@ -20,6 +21,7 @@
   },
   "vulnerabilityAlerts": {
     "minimumReleaseAge": "1 day",
+    "schedule": [],
     "labels": ["dependencies", "security"]
   },
   "packageRules": [
