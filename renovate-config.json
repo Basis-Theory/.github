@@ -5,14 +5,24 @@
     "config:best-practices",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
+  "timezone": "UTC",
+  "schedule": ["before 6am on monday"],
   "automerge": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 5,
-  "minimumReleaseAge": "1 day",
+  "minimumReleaseAge": "7 days",
+  "rebaseWhen": "behind-base-branch",
+  "configMigration": true,
+  "labels": ["dependencies"],
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["before 6am on the first day of the month"]
+  },
+  "vulnerabilityAlerts": {
+    "description": "Security updates bypass minimumReleaseAge per Renovate docs (https://docs.renovatebot.com/key-concepts/minimum-release-age/#what-happens-to-security-updates). No override attempted here.",
+    "schedule": [],
+    "labels": ["dependencies", "security"]
   },
   "packageRules": [
     {
