@@ -20,7 +20,7 @@
     "schedule": ["before 6am on the first day of the month"]
   },
   "vulnerabilityAlerts": {
-    "minimumReleaseAge": "6 hours",
+    "description": "Security updates bypass minimumReleaseAge per Renovate docs (https://docs.renovatebot.com/key-concepts/minimum-release-age/#what-happens-to-security-updates). No override attempted here.",
     "schedule": [],
     "labels": ["dependencies", "security"]
   },
