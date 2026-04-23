@@ -5,14 +5,22 @@
     "config:best-practices",
     "helpers:pinGitHubActionDigestsToSemver"
   ],
+  "timezone": "America/New_York",
+  "schedule": ["before 6am on monday"],
   "automerge": false,
   "prHourlyLimit": 0,
   "prConcurrentLimit": 5,
-  "minimumReleaseAge": "1 day",
+  "minimumReleaseAge": "7 days",
+  "configMigration": true,
+  "labels": ["dependencies"],
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "lockFileMaintenance": {
     "enabled": true,
     "schedule": ["before 6am on the first day of the month"]
+  },
+  "vulnerabilityAlerts": {
+    "minimumReleaseAge": "1 day",
+    "labels": ["dependencies", "security"]
   },
   "packageRules": [
     {
