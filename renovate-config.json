@@ -13,6 +13,7 @@
   "minimumReleaseAge": "7 days",
   "rebaseWhen": "behind-base-branch",
   "configMigration": true,
+  "gitIgnoredAuthors": ["ducktape@basistheory.com"],
   "labels": ["dependencies"],
   "enabledManagers": ["npm", "nuget", "dockerfile", "github-actions", "terraform"],
   "lockFileMaintenance": {
