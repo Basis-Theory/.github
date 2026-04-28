@@ -37,6 +37,12 @@
       "description": "Require Dependency Dashboard approval before opening major update PRs",
       "matchUpdateTypes": ["major"],
       "dependencyDashboardApproval": true
+    },
+    {
+      "description": "Skip digest pinning for aquasecurity/* GitHub Actions. The aquasecurity org has a GitHub IP allow list that blocks Renovate's digest lookups from Modal, causing Renovate to exit non-zero and post warning summaries to #dependency-prs. See README.md.",
+      "matchManagers": ["github-actions"],
+      "matchPackageNames": ["aquasecurity/**"],
+      "pinDigests": false
     }
   ]
 }
