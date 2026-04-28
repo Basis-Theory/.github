@@ -39,7 +39,7 @@
       "dependencyDashboardApproval": true
     },
     {
-      "description": "Skip digest pinning for aquasecurity/* GitHub Actions. The aquasecurity org has a GitHub IP allow list that blocks Renovate's digest lookups from Modal, causing Renovate to exit non-zero and post warning summaries to #dependency-prs. See README.md.",
+      "description": "Skip digest pinning for aquasecurity/* GitHub Actions. The aquasecurity org enforces a GitHub IP allow list that blocks Renovate's digest lookups from Modal egress, which Renovate logs at ERROR level and uses as grounds to exit non-zero — triggering warning summaries in #dependency-prs. Tag-based version updates still flow through normally; only the SHA-pin step is skipped.",
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["aquasecurity/**"],
       "pinDigests": false
