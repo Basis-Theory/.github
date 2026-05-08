@@ -8,6 +8,7 @@
   "timezone": "UTC",
   "schedule": ["before 6am on monday"],
   "automerge": false,
+  "rebaseWhen": "behind-base-branch",
   "prHourlyLimit": 0,
   "prConcurrentLimit": 5,
   "minimumReleaseAge": "7 days",
