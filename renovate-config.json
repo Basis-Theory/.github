@@ -30,7 +30,7 @@
     {
       "description": "Group all non-major updates into a single PR",
       "matchPackageNames": ["*"],
-      "matchUpdateTypes": ["minor", "patch", "digest", "pin"],
+      "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch"
     },
